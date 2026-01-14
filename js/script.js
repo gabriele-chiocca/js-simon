@@ -1,6 +1,6 @@
 const numbergenerated = generatenumbers();
 
-const numeristampati = stampanumeri(numbergenerated);
+stampanumeri(numbergenerated);
 
 function generatenumbers() {
   //Array Numeri generati
@@ -26,3 +26,9 @@ function stampanumeri(numbers) {
     numbersList.innerHTML += '<li>' + numbers[i] + '</li>';
   }
 }
+
+//Timeout
+
+setTimeout(function () {
+  document.getElementById('numbers-list').innerHTML = '';
+}, 3000);
