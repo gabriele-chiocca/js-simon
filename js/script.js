@@ -4,24 +4,25 @@ const numeristampati = stampanumeri(numbergenerated);
 
 function generatenumbers() {
   //Array Numeri generati
-  const numbers = [''];
+  const numbers = [];
 
-  for (let = 1; numbers.lenght < 5; i++) {
+  for (let i = 1; numbers.length < 5; i++) {
     const numGenerate = Math.floor(Math.random() * 100) + 1;
 
     if (!numbers.includes(numGenerate)) {
-      numbers.push(n);
+      numbers.push(numGenerate);
     }
   }
   return numbers;
 }
 
+//Inserisco i numeri generati random nell'ul all'interno dell'html
 function stampanumeri(numbers) {
   const numbersList = document.getElementById('numbers-list');
 
   numbersList.innerHTML = '';
 
-  for (let i = 0; i < numbers.lenght; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     numbersList.innerHTML += '<li>' + numbers[i] + '</li>';
   }
 }
