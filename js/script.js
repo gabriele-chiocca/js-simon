@@ -31,4 +31,8 @@ function stampanumeri(numbers) {
 
 setTimeout(function () {
   document.getElementById('numbers-list').innerHTML = '';
+
+  const answernumber = document.getElementById('answers-form');
+
+  answernumber.classList.remove('d-none');
 }, 3000);
